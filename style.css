@@ -1,0 +1,234 @@
+body {
+   background-image: url(imagen\ 3.jpg);
+   
+   /* Fuente general para el texto */
+
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Fuente especial para los títulos */
+h1, h2, h3, h4, h5, h6, h7 .navbar-brand {
+  font-family: 'Lobster', cursive;
+   color: white;
+   text-align: center;
+    
+   h1 {
+            color: white;
+            text-align: center;      /* Centra el texto */
+            font-style: italic;      /* Cursiva */
+            font-weight: bold;       /* Negrita (puedes quitar esta línea si no la quieres) */
+        }
+
+        }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; /* Cambia este valor según el tamaño deseado */
+}
+
+
+p {
+    color:whitesmoke;
+    text-align: center;
+      font-size: 18px;       /* Tamaño opcional */
+      max-width: 600px;      /* Ancho máximo opcional para mejor lectura */
+      margin: 0 auto;        /* Centra el párrafo si tiene un ancho */
+    }
+h2{
+    color: whitesmoke;
+}
+ol{
+    color: white;
+}
+
+article{
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+P{
+    alinear-izquierda{
+  width: 60%;         /* ancho limitado */
+  margin-left: auto;  /* empuja el párrafo hacia la derecha */
+  margin-right: 0;    /* pega al borde derecho */
+  text-align: right;  /* el texto dentro se alinea a la derecha */
+}
+
+}
+ul{
+    color: white;
+}
+
+table {
+  width: 70%;
+  margin: 30px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8); /* Suave y neutro */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);   /* Sombra suave */
+}
+
+/* Encabezado */
+th {
+  background-color: #2182cd;  /* Muy suave y claro */
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Celdas */
+td {
+  padding: 12px;
+  text-align: center;
+  background-color: #26a4c7; /* Color base sin bordes visibles */
+}
+
+/* Quitar líneas */
+th, td {
+  border: none;
+}
+
+
+video {
+  display: block;       
+  margin: 0 auto;       
+}
+h4{
+    color: white;
+            text-align: left;      /* Centra el texto */
+            font-style: italic;      /* Cursiva */
+            font-weight: bold;       /* Negrita (puedes quitar esta línea si no la quieres) */
+            font-size: 32px;
+
+}
+h5{
+    color: white;
+            text-align: center;      /* Centra el texto */
+            font-style: italic;      /* Cursiva */
+            font-weight: bold;       /* Negrita (puedes quitar esta línea si no la quieres) */
+            font-size: 32px;
+}
+h6.grande {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+input{
+  border: 4px solid #007BFF; /* borde azul más visible */
+  box-shadow: 0 0 10px #007BFF;
+}
+
+/* FORMULARIO MODERNO */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffffcc; /* fondo blanco semi-transparente */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Campos */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0078a0;
+  outline: none;
+  box-shadow: 0 0 8px #81d4fa;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas centradas y con color */
+.form-label {
+  font-weight: bold;
+  color: #004d80;
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Botón llamativo centrado */
+.btn-success {
+  background-color: #1919c0;
+  border: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(25, 25, 192, 0.4);
+}
+
+.btn-success:hover {
+  background-color: #e91e63;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(233, 30, 99, 0.5);
+}
+#galeria {
+  display: flex;
+  gap: 15px;               
+  overflow-x: auto;        
+  padding: 10px;
+  background-color: #16a799;
+  border-radius: 8px;
+  white-space: nowrap;     
+  scrollbar-width: thin;   /* para Firefox, scroll delgado */
+}
+
+/* Quitar scrollbar en Webkit y poner personalizado opcional */
+#galeria::-webkit-scrollbar {
+  height: 8px;
+}
+#galeria::-webkit-scrollbar-thumb {
+  background-color: #007BFF;
+  border-radius: 10px;
+}
+
+/* Estilo general para las imágenes */
+#galeria img {
+  max-height: 150px;
+  height: 100%;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Imagen seleccionada */
+#galeria img.seleccionada {
+  border-color: #007BFF;
+  box-shadow: 0 0 15px #1b60aa;
+  transform: scale(1.05);
+}
+#galeria img {
+  max-height: 180px;
+  image-orientation: center;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#galeria img.seleccionada {
+  border: 4px solid #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+  transform: scale(1.05);
+}
